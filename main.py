@@ -9,7 +9,7 @@ class MyServer(BaseHTTPRequestHandler):
         Специальный класс, который отвечает за
         обработку входящих запросов от клиентов
     """
-    filename = ".venv/19and1.html"
+    filename = "19and1.html"
 
     def get_context_data(self):
         with open(self.filename, "r", encoding="utf-8") as file:
